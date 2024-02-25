@@ -33,5 +33,5 @@ jobs:
     - name: Cache dependencies
       uses: actions/cache@v2
       with:
-       path: path/to/your/dependencies
+       path: node_modules
        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
